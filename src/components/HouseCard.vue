@@ -1,8 +1,8 @@
 <template>
-    <div class="HouseCard card">
+    <div class="HouseCard card elevation-2">
 
         <router-link :to="{ name: 'House', params: { houseId: house.id } }">
-        <img class="rounded-top img-fluid w-100" :src="house.imgUrl" :alt="house.make + ' ' + house.model">
+        <img class="rounded-top img-fluid w-100" :src="house.imgUrl" :alt="house.bedrooms + ' ' + house.bathrooms">
         </router-link>
 
     <div class="card-body">

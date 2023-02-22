@@ -5,7 +5,7 @@
         <div class="col-md-8 m-auto">
             <HouseCard :house="house" :showSeller="false" />
             <div class="card my-2">
-            <div class="card-body">
+            <div class="card-body elevation-5 rounded-bottom">
                 <p>
                 {{ house.description }}
                 </p>
@@ -19,7 +19,7 @@
 
             </div>
 
-            <div class="card-footer d-flex align-items-center justify-content-between">
+            <div class="card-footer d-flex align-items-center justify-content-between pt-5 elevation-1 rounded-top">
                 <div>
                 <button @click="removeListing" v-if="account.id == house.creatorId" class="btn btn-danger">remove
                     listing</button>

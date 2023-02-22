@@ -28,7 +28,7 @@ class HousesService{
 
     async getHouseById(houseId){
         AppState.house = null
-        const res = await api.delete('auth/api/houses/' + houseId)
+        const res = await api.get('auth/api/houses/' + houseId)
         AppState.house = res.data
     }
 
